@@ -10,7 +10,7 @@ const questions =
             },
             {
                 text: "Blue whale",
-                correct: false
+                correct: true
             },
             {
                 text: "Elephant",
