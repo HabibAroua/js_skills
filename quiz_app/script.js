@@ -165,13 +165,17 @@ function handleNextButton()
 
 startQuiz();
 
-nextButton.addEventListener("click", () =>{
-    if(currentQuestionIndex < questions.length)
+nextButton.addEventListener
+(
+    "click", () =>
     {
-        handleNextButton();
+        if(currentQuestionIndex < questions.length)
+        {
+            handleNextButton();
+        }
+        else
+        {
+            startQuiz();
+        }
     }
-    else
-    {
-        startQuiz();
-    }
-})
+);
